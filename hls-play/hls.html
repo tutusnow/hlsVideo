@@ -1,0 +1,23 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8 />
+    <title>videojs-contrib-hls embed</title>
+      <link href="video-js.css" rel="stylesheet">
+      <script src="video.js"></script>
+      <script src="videojs-contrib-hls.js"></script>
+    </head>
+    <body>
+      <h1>Video.js Example Embed</h1>
+      <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268"
+      data-setup='{}'>
+      </video>
+      <script>
+        const player = videojs('my_video_1');
+        player.src({
+          src: 'http://192.168.104.5:83/openUrl/OybfBoA/live.m3u8',
+          type: 'application/x-mpegURL'
+        });
+      </script>
+    </body>
+    </html>
